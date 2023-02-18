@@ -13,10 +13,9 @@ public class RetornandoValoresComVendasDeCurso {
 
 		iterarEExibirPosicoesDoVetorString(cursos);
 
-		imprimirMensagemSemQuebraDeLinha("O curso que você deseja é o: ");
-		Integer posicaoCursoEscolhido = scanner.nextInt();
+		Integer posicaoCursoEscolhido = receberNumeroInteiroDoUsuario("O curso que você deseja é o: ", scanner);
 
-		Boolean posicaoValida = posicaoCursoEscolhido >= 0 && posicaoCursoEscolhido < cursos.length; 
+		Boolean posicaoValida = verificarPosicaoEscolhidaPeloUsuario(posicaoCursoEscolhido, cursos );
 
 		if (!posicaoValida) {
 			encerrarProgramaPorCausaDePosicaoInvalida();
@@ -30,11 +29,9 @@ public class RetornandoValoresComVendasDeCurso {
 
 		iterarEExibirPosicoesDoVetorString(formasPagamento);
 
-		imprimirMensagemSemQuebraDeLinha("Sua forma de pagamento escolhida é: ");
-		Integer posicaoFormaPagamentoEscolhida = scanner.nextInt();
+		Integer posicaoFormaPagamentoEscolhida = receberNumeroInteiroDoUsuario("Sua forma de pagamento escolhida é: ", scanner);
 
-		posicaoValida = posicaoFormaPagamentoEscolhida >= 0 
-				&& posicaoFormaPagamentoEscolhida < formasPagamento.length; 
+		posicaoValida = verificarPosicaoEscolhidaPeloUsuario(posicaoFormaPagamentoEscolhida, cursos );
 
 		if (!posicaoValida) {
 			encerrarProgramaPorCausaDePosicaoInvalida();
@@ -53,7 +50,7 @@ public class RetornandoValoresComVendasDeCurso {
 	static void imprimirTraco() {
 		System.out.println("------------------------------------------------");
 	}
-	
+
 	static void imprimirMensagemSemQuebraDeLinha(String texto) {
 		System.out.print(texto);
 	}
@@ -62,15 +59,26 @@ public class RetornandoValoresComVendasDeCurso {
 	}
 
 	static void encerrarProgramaPorCausaDePosicaoInvalida() {
-		System.err.println("Posição inválida!");
+		imprimirMensagemComQuebraDeLinha("Posição inválida!");
 		System.exit(1);
 	}
-	
+
 	static void iterarEExibirPosicoesDoVetorString(String[] vetor) {
 		for(int i = 0; i < vetor.length; i++) {
-			System.out.println("[" + i + "] " + vetor[i]);
+			imprimirMensagemComQuebraDeLinha("[" + i + "] " + vetor[i]);
 		}
 	}
 
+	static Boolean verificarPosicaoEscolhidaPeloUsuario(Integer posicao, String[] vetor) {
+		Boolean valida = posicao >= 0 && posicao < vetor.length;
+		return valida;
 	}
+	
+	static Integer receberNumeroInteiroDoUsuario(String texto, Scanner scanner) {
+		imprimirMensagemSemQuebraDeLinha(texto);
+		Integer numero = scanner.nextInt();
+		return numero;
+	}
+
+}
 
