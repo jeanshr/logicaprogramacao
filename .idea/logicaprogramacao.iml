@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file:///production/logicaprogramacao/out" />
+    <output-test url="file:///test/logicaprogramacao" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo02/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo03/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo04/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo05/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo06/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo07/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo08/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo09" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CursoLogicaCapitulo11/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="algaworks-console-1.0" level="project" />
+  </component>
+</module>
