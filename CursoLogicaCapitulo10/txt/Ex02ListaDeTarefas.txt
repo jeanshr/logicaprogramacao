@@ -1,0 +1,8 @@
+cabeleireiros
+cozinheiros
+eletricistas
+jardineiros
+motoristas de aplicativo
+caminhoneiro
+mecânico
+pedreiro

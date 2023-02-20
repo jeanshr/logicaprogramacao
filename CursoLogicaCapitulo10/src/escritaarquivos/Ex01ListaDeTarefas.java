@@ -15,6 +15,7 @@ public class Ex01ListaDeTarefas {
 		
 		int i = 1;
 		String tarefas = null;
+		
 		while(tarefas != "x") {
 			System.out.print("Entre com a tarefa " + i + ": ");
 			tarefas = scanner.nextLine();
@@ -28,7 +29,7 @@ public class Ex01ListaDeTarefas {
 		}
 
 		System.out.println("Fim...");
-		escreverDadosNoArquivo("/Users/jecunha/Documents/logicaprogramacao/CursoLogicaCapitulo10/txt/Ex01ListaDeTarefas.txt", listaTarefas);
+		escreverDadosNoArquivo("/Users/jecunha/Documents/logicaprogramacao/CursoLogicaCapitulo10/txt/Ex02ListaDeTarefas.txt", listaTarefas);
 		scanner.close();
 	}
 	

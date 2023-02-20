@@ -1,4 +1,2 @@
 revisao ex
 refazer consertando o que fiz dif
-esqueci de usar metodo 
-foquei só no ex
