@@ -14,7 +14,9 @@ public class Contato {
 		this.nome = nome;
 		this.telefone = telefone;
 	}
-	
+	public boolean isNovo() {
+		return id == null;
+	}
 	public String getTelefone() {
 		return telefone;
 	}
