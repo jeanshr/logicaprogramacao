@@ -62,7 +62,7 @@ public class ContatosControle {
 	}
 	
 	@PutMapping("/contatos/{id}")
-	public String atualizar(Contato contato) {
+	public String atualizar(Contato contato, @PathVariable String id) {
 		//Integer indice = procurarIndiceContato(contato.getId());
 		
 		//Contato contatoVelho = LISTA_CONTATOS.get(indice);
